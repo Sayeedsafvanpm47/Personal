@@ -1,18 +1,8 @@
-/**
-* Template Name: Personal
-* Updated: Aug 30 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
-  color: #fff;
+  color: #38cfdd;
   position: relative;
   background: transparent;
 }
@@ -23,8 +13,8 @@ span{
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("PNG\ image\ 2.png") top right no-repeat;
-  background-size: 600px;
+  background: #040404 url("websitebg.jpg") top right no-repeat;
+  background-size: 1000px;
   left: 0;
   right: 0;
   top: 0;
@@ -524,21 +514,18 @@ section .container {
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
-.interests .icon-box {
+.interests .btn{
   display: flex;
   align-items: center;
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
+  text-align: center;
 }
 
-.interests .icon-box i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 1;
-}
 
-.interests .icon-box h3 {
+
+.interests .btn h3 {
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -546,10 +533,18 @@ section .container {
   font-size: 16px;
   color: #fff;
 }
-
-.interests .icon-box:hover {
-  background: rgba(255, 255, 255, 0.12);
+.interests .btn h3:hover {
+  color: #15bb62;
 }
+
+
+
+.interests .btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+
+}
+
+
 
 
 /*--------------------------------------------------------------
@@ -852,78 +847,6 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-  background: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
-}
-
-.portfolio-details .container {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-.portfolio-details .portfolio-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-info {
-  padding-top: 45px;
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-info p {
-  font-size: 15px;
-  padding: 15px 0 0 0;
-}
-
-@media (max-width: 992px) {
-  .portfolio-details .portfolio-info {
-    padding-top: 20px;
-  }
-}
-
-.portfolio-details .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
-}
-
-/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
@@ -975,54 +898,8 @@ section .container {
   color: #18d26e;
 }
 
-.contact .php-email-form {
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact input,
+.contact textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1032,32 +909,33 @@ section .container {
   color: #fff;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact input:focus,
+.contact textarea:focus {
   background-color: rgba(255, 255, 255, 0.11);
+  color: white;
 }
 
-.contact .php-email-form input::-moz-placeholder,
-.contact .php-email-form textarea::-moz-placeholder {
+.contact input::-moz-placeholder,
+.contact  textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity:1;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.contact .php-email-form input::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input {
+.contact input {
   padding: 10px 15px;
 }
 
-.contact .php-email-form textarea {
+.contact  textarea {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact button[type=submit] {
   background: #18d26e;
   border: 0;
   padding: 10px 30px;
@@ -1066,8 +944,14 @@ section .container {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact button[type=submit]:hover {
   background: #15bb62;
+}
+#msg{
+  color: #61b752;
+margin-top: 1%;
+display: block;
+margin-left: 42.5%;
 }
 
 @keyframes animate-loading {
