@@ -13,8 +13,9 @@ span{
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("websitebg.jpg") top right no-repeat;
+  background: #040404 url("mainpic.webp") top right no-repeat;
   background-size: 1000px;
+ 
   left: 0;
   right: 0;
   top: 0;
